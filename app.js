@@ -46,6 +46,6 @@ app.use(errorController.error404NotFound);
 
 
 const port = process.env.PORT;
-app.listen(3000, (req) => {
+app.listen(port||3000, (req) => {
 console.log("Server Up at 3000");
 });
