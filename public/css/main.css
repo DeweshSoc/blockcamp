@@ -1,0 +1,104 @@
+main{
+    padding: 2rem;
+    background-color: #E8F0F2;
+}
+
+hr{
+    width: 50%;
+    border-width: 10px 0 0 0;
+    border-style: dotted;
+    border-color: #39A2DB;
+}
+
+.hide{
+    display:none;
+}
+
+.fa-link{
+    transform: rotate(45deg);
+    height: 0;
+    margin: 5rem 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 100%;
+  height: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #43bcfd;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #338fc0;
+  border-radius: 10%;
+}
+
+
+
+/* btns */
+
+.create-btn{
+    position: fixed;
+    z-index: 10000;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.mine-btn{
+    margin: 1rem;
+}
+
+/* divs */
+
+
+nav{
+    background-color: #053742;
+}
+
+
+
+.overlay{
+    background-color: rgba(0,0,0,1);
+    border-radius: 10px;
+    border: 2px solid #43bcfd;
+    padding: 2%;
+    position: fixed;
+    right: 37.5%;
+    top:10%;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
+    z-index: 1000;
+}
+
+.notification{
+    color: #43bcfd;
+}
+
+
+.blockchain{
+    padding: 1rem;
+    margin: 1rem 0;
+
+}
+
+.block{
+    background-color: #A2DBFA;
+    padding: 1rem;
+    border: 2px solid #39A2DB;
+    margin: 0.5rem;
+}
+.block .hash{
+    overflow-x: scroll;
+}
+
+.block:first-child .hash{
+    overflow:hidden;
+}
+
+.row .fa-link:last-child{
+    display: none;
+}
+

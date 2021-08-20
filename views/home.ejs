@@ -1,0 +1,49 @@
+<%- include("includes/begin.ejs") %> 
+    <link rel="stylesheet" href="/css/main.css">
+    <title>BlockChain Demonstration</title>
+    <script src="/js/utility.js" defer></script>
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
+    <%- include("includes/navigation.ejs") %> 
+    <main>
+      <template id="block-template">
+        <div class="col-md-2 col-sm-4 col-xs-1 block">
+              <h6 id="block-index">Block Index : </h6>
+              <h6 id="timestamp">Tiemstamp : </h6>
+              <h6 id="proof">Proof : </h6>
+              <h6 class="hash" id="p-hash">Prev. Hash : </h6>
+              <h6 class="hash" id="block-hash">Hash : </h6>
+        </div>
+        <i class="fas fa-link"></i>
+      </template>
+
+      <template id="bc-template">
+        <div class="blockchain">
+          <h2>Blockchain <span></span> <button class="btn btn-secondary">Mine</button></h2>
+          <div class="row">
+            
+          </div>
+        </div>
+      </template>
+      <div class="overlay hide" id="notice-overlay">
+        <div class="notification">
+          <h2>
+
+          </h2>
+          <p>
+
+          </p>
+        </div>
+      </div>
+
+        <button id="create-btn" role="button" class="btn btn-primary create-btn">Create BlockChain</button>
+        
+        <!-- <hr> -->
+        <h3>Created Blockchains</h3>
+        <div id="bc-container">
+
+        </div>
+
+    </main>
+<%- include("includes/end.ejs") %> 
